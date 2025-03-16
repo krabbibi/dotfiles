@@ -1,6 +1,6 @@
 { config, lib, ... }:
 {
-  programs.nixvim.keymaps = lib.mkIf config.plugins.neo-tree.enable [
+  programs.nixvim.keymaps = [
     {
       mode = "n";
       key = "<leader>E";
@@ -12,7 +12,7 @@
   ];
 
   programs.nixvim.plugins.neo-tree = {
-    enable = true; 
+    enable = true;
 
     closeIfLastWindow = true;
 

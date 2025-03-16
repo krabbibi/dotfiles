@@ -44,7 +44,7 @@
               home-manager.sharedModules = [
                 nixvim.homeManagerModules.nixvim
               ];
-              home-manager.users.krabbe = import ./home.nix;
+              home-manager.users.krabbe = import ./nixHome.nix;
 
               # Optionally, use home-manager.extraSpecialArgs to pass
               # arguments to home.nix
@@ -53,21 +53,21 @@
         };
       };
       darwinConfigurations."krabbe-mbp" = nix-darwin.lib.darwinSystem {
-        modules = [ 
-          ./macOS.nix 
+        modules = [
+          ./macOS.nix
           mac-app-util.darwinModules.default
-            home-manager.darwinModules.home-manager
-            {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.sharedModules = [
-                nixvim.homeManagerModules.nixvim
-              ];
-              home-manager.users.krabbe = import ./macHome.nix;
+          home-manager.darwinModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.sharedModules = [
+              nixvim.homeManagerModules.nixvim
+            ];
+            home-manager.users.krabbe = import ./macHome.nix;
 
-              # Optionally, use home-manager.extraSpecialArgs to pass
-              # arguments to home.nix
-            }
+            # Optionally, use home-manager.extraSpecialArgs to pass
+            # arguments to home.nix
+          }
         ];
 
       };

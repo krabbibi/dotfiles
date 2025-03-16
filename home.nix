@@ -37,7 +37,19 @@
   ];
 
   home.file = {
-    ".config/hypr/hyprland.conf" = {
+    ".config/ghostty" = {
+      source = dotfiles/ghostty;
+      recursive = true;
+    };
+    ".config/neofetch" = {
+      source = dotfiles/neofetch;
+      recursive = true;
+    };
+    ".config/waybar" = {
+      source = dotfiles/ghostty;
+      recursive = true;
+    };
+    ".config/hypr" = {
       source = dotfiles/hypr;
       recursive = true;
     };

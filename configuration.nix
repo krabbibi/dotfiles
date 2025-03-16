@@ -38,6 +38,7 @@
         symbolsFile = keyboard/symbols/ushypr;
       };
     };
+    openssh.enable = true;
     pipewire = {
       enable = true;
       alsa.enable = true;
@@ -107,36 +108,34 @@
     systemPackages = with pkgs; [
       bash
       zsh
-    ghostty
-    hyprpicker
-    pavucontrol
-    hyprcursor
-    hyprlock
-    hypridle
-    hyprpaper
-    waybar
-    helix
-    pyprland
+      ghostty
+      hyprpicker
+      pavucontrol
+      hyprcursor
+      hyprlock
+      hypridle
+      hyprpaper
+      waybar
+      helix
+      pyprland
     ];
+    variables.EDITOR = "nvim";
   };
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
+  programs = {
+    hyprland = {
+      enable = true;
+      xwayland.enable = true;
+    };
+    mtr.enable = true;
+    gnupg.agent = {
+      enable = true;
+      enableSSHSupport = true;
+    };
   };
 
+  fonts.packages = with pkgs; [ nerdfonts ];
   hardware = {
     graphics.enable = true;
-  };
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  programs.mtr.enable = true;
-  programs.gnupg.agent = {
-    enable = true;
-    enableSSHSupport = true;
-  };
-  services.openssh.enable = true;
-  environment = {
-    variables.EDITOR = "nvim";
   };
   system.stateVersion = "24.11"; # Did you read the comment?
   nix.settings.experimental-features = [
