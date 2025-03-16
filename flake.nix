@@ -63,7 +63,7 @@
               home-manager.sharedModules = [
                 nixvim.homeManagerModules.nixvim
               ];
-              home-manager.users.krabbe = import ./home.nix;
+              home-manager.users.krabbe = import ./macHome.nix;
 
               # Optionally, use home-manager.extraSpecialArgs to pass
               # arguments to home.nix

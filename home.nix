@@ -5,7 +5,8 @@
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "krabbe";
-  home.homeDirectory = lib.mkDefault "/${if pkgs.stdenv.isDarwin then "Users" else "home"}/krabbe";
+  # home.homeDirectory = lib.mkDefault "/${if pkgs.stdenv.isDarwin then "Users" else "home"}/krabbe";
+  home.homeDirectory = "/Users/krabbe";
 
   home.stateVersion = "24.11"; # Please read the comment before changing.
 
@@ -47,6 +48,7 @@
   };
 
   programs = {
+    bash.enable = true;
     home-manager.enable = true;
     git = {
       enable = true;

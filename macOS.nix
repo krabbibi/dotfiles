@@ -9,6 +9,10 @@
 #          pkgs.mullvad
         ];
 
+      users.users.krabbe = {
+    name = "krabbe";
+    home = "/Users/krabbe";
+  };
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";
       system.defaults.NSGlobalDomain._HIHideMenuBar = true;
