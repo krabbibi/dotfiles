@@ -1,22 +1,38 @@
 {
 	imports = [
-		./tree-sitter.nix
-		./options.nix
-		./lualine.nix
-        ./lsp.nix
-        ./conform.nix
-        ./cmp.nix
-        ./mini.nix
-        ./bufferline.nix
-        ./telescope.nix
         ./auto-cmds.nix
-        ./startup.nix
+        ./bufferline.nix
+        ./cmp.nix
+        ./conform.nix
         ./keymaps.nix
+        ./lsp.nix
+        ./lualine.nix
+        ./mini.nix
+        ./neo-tree.nix
+        ./options.nix
+        ./startup.nix
+        ./telescope.nix
+        ./tree-sitter.nix
 		];
 	programs.nixvim = {
 		colorschemes = {
-			tokyonight.enable = true;
-			};
+			cattpuccin = {
+        enable = true;
+        settings = {
+          flavour = "mocha"; 
+          default_integrations = true;
+          integrations = {
+              cmp = true;
+              treesitter = true;
+            nvimtree = true;
+              mini = {
+                  enabled = true;
+                  indentscope_color = "";
+              };
+          };
+        };
+      };
+    };
 		plugins = {
       			gitsigns = {
 			        enable = true;
@@ -32,7 +48,6 @@
               nix.enable = true;
               which-key.enable = true;
 		      nvim-autopairs.enable = true;
-		      none-ls.enable = true;
 		      nvim-surround.enable = true;
 		      trim = {
 			enable = true;

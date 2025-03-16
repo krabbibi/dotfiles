@@ -6,7 +6,7 @@ let
   '';
 in
   {pkgs, ...}: {
-    plugins = {
+    programs.nixvim.plugins = {
       avante.enable = true;
       cmp = {
         enable = true;
