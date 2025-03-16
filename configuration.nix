@@ -1,4 +1,9 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   imports = [
@@ -6,8 +11,9 @@
   ];
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.grub.enable = true;
+  boot.loader.grub.device = "nodev";
+  boot.loader.grub.useOSProber = true;
 
   networking.hostName = "nixos"; # Define your hostname.
   networking.networkmanager.enable = true;
@@ -116,7 +122,6 @@
       hypridle
       hyprpaper
       waybar
-      helix
       pyprland
     ];
     variables.EDITOR = "nvim";
@@ -132,8 +137,9 @@
       enableSSHSupport = true;
     };
   };
-
-  fonts.packages = with pkgs; [ nerdfonts ];
+  fonts.packages =
+    [ ]
+    ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
   hardware = {
     graphics.enable = true;
   };

@@ -34,11 +34,41 @@
           tailwindcss.enable = true;
           protols.enable = true;
           volar.enable = true;
-          ts_ls.enable = true;
           rust_analyzer = {
             enable = true;
             installRustc = false;
             installCargo = false;
+          };
+        };
+      };
+      none-ls = {
+        enable = true;
+        # sources.formatting = {
+        #   alejandra.enable = true;
+        #   hclfmt.enable = true;
+        #   just.enable = true;
+        #   opentofu_fmt.enable = true;
+        #   prettier.enable = true;
+        #   rubocop.enable = true;
+        #   sqlformat.enable = true;
+        #   stylua.enable = true;
+        #   yamlfmt.enable = true;
+        # };
+        # sources.diagnostics = {
+        #   trivy.enable = true;
+        #   yamllint.enable = true;
+        # };
+      };
+
+      trouble = {
+        enable = true;
+        settings = {
+          modes = {
+            lsp = {
+              win = {
+                position = "right";
+              };
+            };
           };
         };
       };

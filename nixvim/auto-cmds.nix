@@ -20,18 +20,6 @@
       };
     }
     {
-      group = "vim_enter";
-      event = [ "VimEnter" ];
-      pattern = "*";
-      callback = {
-        __raw = ''
-          function()
-            vim.cmd('Startup')
-          end
-        '';
-      };
-    }
-    {
       group = "indentscope";
       event = [ "FileType" ];
       pattern = [

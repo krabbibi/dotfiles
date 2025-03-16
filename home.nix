@@ -18,16 +18,23 @@
     oh-my-posh
     neofetch
     spotify
+    obsidian
     brave
     git
     rustup
     openssh
     age
     sops
+    ghostscript
     gh
+    ripgrep
+    imagemagick
+    mermaid-cli
+    tectonic
+    starship
     pgadmin
     fzf
-    #  thefuck
+    thefuck
     bat
     eza
     delta
@@ -49,6 +56,9 @@
       source = dotfiles/ghostty;
       recursive = true;
     };
+    ".config/starship.toml" = {
+      source = dotfiles/starship.toml;
+    };
     ".config/hypr" = {
       source = dotfiles/hypr;
       recursive = true;
@@ -66,6 +76,7 @@
 
   programs = {
     bash.enable = true;
+    direnv.enable = true;
     home-manager.enable = true;
     git = {
       enable = true;
@@ -76,8 +87,6 @@
         init.defaultBranch = "main";
       };
     };
-    direnv.enable = true;
-    starship.enable = true;
     nixvim = {
       enable = true;
       defaultEditor = true;
@@ -107,18 +116,18 @@
         c = "clear";
         s = "web_search duckduckgo";
       };
-      # oh-my-zsh = {
-      #   enable = true;
-      #   extraConfig = builtins.readFile ./extraConfig.zsh;
-      #   # Additional oh-my-zsh plugins
-      #   plugins = [
-      #     "web-search"
-      #     "copyfile"
-      #     "copybuffer"
-      #     "fzf"
-      #     "thefuck"
-      #   ];
-      # };
+      oh-my-zsh = {
+        enable = true;
+        extraConfig = builtins.readFile ./extraConfig.zsh;
+        # Additional oh-my-zsh plugins
+        plugins = [
+          "web-search"
+          "copyfile"
+          "copybuffer"
+          "fzf"
+          "thefuck"
+        ];
+      };
 
       plugins = [
         # Autocompletions
@@ -152,10 +161,6 @@
           };
         }
       ];
-      #   initExtra = ''
-      #     ;
-      #             [[ ! -f ~/.config/home-manager/.p10k.zsh ]] || source ~/.config/home-manager/.p10k.zsh
-      #   '';
     };
   };
 }
