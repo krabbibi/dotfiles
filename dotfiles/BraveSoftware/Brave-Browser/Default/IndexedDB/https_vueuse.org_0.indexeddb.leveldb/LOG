@@ -1,0 +1,6 @@
+2025/03/15-23:53:04.659 639 Creating DB /home/krabbe/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_vueuse.org_0.indexeddb.leveldb since it was missing.
+2025/03/15-23:53:04.668 639 Reusing MANIFEST /home/krabbe/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_vueuse.org_0.indexeddb.leveldb/MANIFEST-000001
+2025/03/15-23:53:43.867 63a Level-0 table #5: started
+2025/03/15-23:53:43.870 63a Level-0 table #5: 3799 bytes OK
+2025/03/15-23:53:43.874 63a Delete type=0 #3
+2025/03/15-23:53:43.874 63a Manual compaction at level-0 from (begin) .. (end); will stop at (end)

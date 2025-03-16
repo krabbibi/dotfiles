@@ -18,15 +18,12 @@
     oh-my-posh
     neofetch
     spotify
-    #    python3
-    # pywal
     brave
     git
     rustup
     openssh
     age
     sops
-    mkalias
     gh
     pgadmin
     fzf
@@ -40,7 +37,14 @@
   ];
 
   home.file = {
-    # ".config/nvim".source = home/nvim;
+    ".config/hypr/hyprland.conf" = {
+      source = dotfiles/hypr;
+      recursive = true;
+    };
+    # ".config/waybar".source = ./dotfiles/waybar;
+    # ".config/waybar/style.css".source = ./dotfiles/waybar/style.css;
+    # ".config/waybar/pywal.css".source = ./dotfiles/waybar/pywal.css;
+    #    ".config/BraveSoftware".source = home/BraveSoftware;
   };
   home.shell.enableZshIntegration = true;
   home.sessionVariables = {

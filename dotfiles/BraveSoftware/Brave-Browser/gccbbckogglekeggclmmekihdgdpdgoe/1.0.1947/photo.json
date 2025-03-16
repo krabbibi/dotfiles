@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "campaigns": [
+    {
+      "campaignId": "11ef06ac-6ec0-4271-9a83-2c6c3a2246cb",
+      "logo": {
+        "imageUrl": "602cc947-020d-403a-be9f-f1ef9fa1bf30.png",
+        "destinationUrl": "https://www.golfn.com/sweepstakes/golfadventureofalifetime?utm_source=brave&utm_medium=web&utm_content=hero",
+        "alt": "GolfN - We're giving away a 9-day, 7-round golf adventure of a lifetime to norther ireland for two lucky golfers. - Enter Now",
+        "companyName": "GolfN"
+      },
+      "wallpapers": [
+        {
+          "imageUrl": "fe9cb3be-5953-417e-8bbe-75d511a7488c.jpg",
+          "creativeInstanceId": "1045adbd-f103-4902-87da-fc44c9d6b170",
+          "focalPoint": {
+            "x": 1280,
+            "y": 720
+          }
+        },
+        {
+          "imageUrl": "1b838f3f-8607-4ac0-bc2e-d4fe9f221673.jpg",
+          "creativeInstanceId": "ad213e72-0ca7-454b-ad11-acb5501112ca",
+          "focalPoint": {
+            "x": 1211,
+            "y": 720
+          },
+          "logo": {
+            "imageUrl": "ff303215-374f-41c1-a07c-2833aa80b9a0.png",
+            "destinationUrl": "https://www.golfn.com/sweepstakes/golfadventureofalifetime?utm_source=brave&utm_medium=web&utm_content=hero",
+            "alt": "GolfN - We're giving away a 9-day, 7-round golf adventure of a lifetime to norther ireland for two lucky golfers. - Enter Now",
+            "companyName": "GolfN"
+          }
+        },
+        {
+          "imageUrl": "de7b1c3d-7252-4d02-8140-f6cfb9c598b6.jpg",
+          "creativeInstanceId": "8c781260-d125-46cf-a2e0-259d83003c36",
+          "focalPoint": {
+            "x": 1211,
+            "y": 720
+          },
+          "logo": {
+            "imageUrl": "ff303215-374f-41c1-a07c-2833aa80b9a0.png",
+            "destinationUrl": "https://www.golfn.com/sweepstakes/golfadventureofalifetime?utm_source=brave&utm_medium=web&utm_content=hero",
+            "alt": "GolfN - We're giving away a 9-day, 7-round golf adventure of a lifetime to norther ireland for two lucky golfers. - Enter Now",
+            "companyName": "GolfN"
+          }
+        },
+        {
+          "imageUrl": "54194009-a09e-4a6a-a9e0-173838819658.jpg",
+          "creativeInstanceId": "1a63487b-b981-4cd0-954f-2e5f7e5dce22",
+          "focalPoint": {
+            "x": 1280,
+            "y": 720
+          },
+          "logo": {
+            "imageUrl": "cd2d680b-461d-45ab-bbf4-8166e7f2fae4.png",
+            "destinationUrl": "https://www.golfn.com/sweepstakes/golfadventureofalifetime?utm_source=brave&utm_medium=web&utm_content=hero",
+            "alt": "GolfN - We're giving away a 9-day, 7-round golf adventure of a lifetime to norther ireland for two lucky golfers. - Enter Now",
+            "companyName": "GolfN"
+          }
+        }
+      ]
+    }
+  ],
+  "campaigns2": [
+    {
+      "campaignId": "11ef06ac-6ec0-4271-9a83-2c6c3a2246cb",
+      "logo": {
+        "imageUrl": "602cc947-020d-403a-be9f-f1ef9fa1bf30.png",
+        "destinationUrl": "https://www.golfn.com/sweepstakes/golfadventureofalifetime?utm_source=brave&utm_medium=web&utm_content=hero",
+        "alt": "GolfN - We're giving away a 9-day, 7-round golf adventure of a lifetime to norther ireland for two lucky golfers. - Enter Now",
+        "companyName": "GolfN"
+      },
+      "wallpapers": [
+        {
+          "imageUrl": "fe9cb3be-5953-417e-8bbe-75d511a7488c.jpg",
+          "creativeInstanceId": "1045adbd-f103-4902-87da-fc44c9d6b170",
+          "focalPoint": {
+            "x": 1280,
+            "y": 720
+          }
+        },
+        {
+          "imageUrl": "1b838f3f-8607-4ac0-bc2e-d4fe9f221673.jpg",
+          "creativeInstanceId": "ad213e72-0ca7-454b-ad11-acb5501112ca",
+          "focalPoint": {
+            "x": 1211,
+            "y": 720
+          },
+          "logo": {
+            "imageUrl": "ff303215-374f-41c1-a07c-2833aa80b9a0.png",
+            "destinationUrl": "https://www.golfn.com/sweepstakes/golfadventureofalifetime?utm_source=brave&utm_medium=web&utm_content=hero",
+            "alt": "GolfN - We're giving away a 9-day, 7-round golf adventure of a lifetime to norther ireland for two lucky golfers. - Enter Now",
+            "companyName": "GolfN"
+          }
+        },
+        {
+          "imageUrl": "de7b1c3d-7252-4d02-8140-f6cfb9c598b6.jpg",
+          "creativeInstanceId": "8c781260-d125-46cf-a2e0-259d83003c36",
+          "focalPoint": {
+            "x": 1211,
+            "y": 720
+          },
+          "logo": {
+            "imageUrl": "ff303215-374f-41c1-a07c-2833aa80b9a0.png",
+            "destinationUrl": "https://www.golfn.com/sweepstakes/golfadventureofalifetime?utm_source=brave&utm_medium=web&utm_content=hero",
+            "alt": "GolfN - We're giving away a 9-day, 7-round golf adventure of a lifetime to norther ireland for two lucky golfers. - Enter Now",
+            "companyName": "GolfN"
+          }
+        },
+        {
+          "imageUrl": "54194009-a09e-4a6a-a9e0-173838819658.jpg",
+          "creativeInstanceId": "1a63487b-b981-4cd0-954f-2e5f7e5dce22",
+          "focalPoint": {
+            "x": 1280,
+            "y": 720
+          },
+          "logo": {
+            "imageUrl": "cd2d680b-461d-45ab-bbf4-8166e7f2fae4.png",
+            "destinationUrl": "https://www.golfn.com/sweepstakes/golfadventureofalifetime?utm_source=brave&utm_medium=web&utm_content=hero",
+            "alt": "GolfN - We're giving away a 9-day, 7-round golf adventure of a lifetime to norther ireland for two lucky golfers. - Enter Now",
+            "companyName": "GolfN"
+          }
+        }
+      ]
+    }
+  ]
+}
