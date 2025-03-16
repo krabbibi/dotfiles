@@ -1,35 +1,36 @@
-{ lib, config, pkgs, ... }:
+{
+  lib,
+  config,
+  pkgs,
+  ...
+}:
 
 {
   imports = [ ./nixvim ];
-  # Home Manager needs a bit of information about you and the paths it should
-  # manage.
   home.username = "krabbe";
   # home.homeDirectory = lib.mkDefault "/${if pkgs.stdenv.isDarwin then "Users" else "home"}/krabbe";
-  home.homeDirectory = "/Users/krabbe";
 
   home.stateVersion = "24.11"; # Please read the comment before changing.
 
   home.packages = with pkgs; [
     bash
     zsh
-    oh-my-posh 
+    oh-my-posh
     neofetch
     spotify
-    python3
-    pywal
+    #    python3
+    # pywal
     brave
     git
     rustup
     openssh
     age
     sops
-
-          mkalias
-          gh
-          pgadmin
+    mkalias
+    gh
+    pgadmin
     fzf
-    thefuck
+    #  thefuck
     bat
     eza
     delta
@@ -39,7 +40,7 @@
   ];
 
   home.file = {
-    ".config/nvim".source = config/nvim;
+    # ".config/nvim".source = home/nvim;
   };
   home.shell.enableZshIntegration = true;
   home.sessionVariables = {
@@ -86,14 +87,8 @@
       enableCompletion = true;
       dotDir = ".config/zsh";
       shellAliases = {
-        hms = "home-manager switch";
-        lg = "lazygit";
         v = "nvim";
         c = "clear";
-        cat = "bat --theme='Catppuccin Mocha'";
-        fk = "fuck";
-        ls = "eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions";
-        cd = "z";
         s = "web_search duckduckgo";
       };
       # oh-my-zsh = {
@@ -141,10 +136,10 @@
           };
         }
       ];
-    #   initExtra = ''
-    #     ;
-    #             [[ ! -f ~/.config/home-manager/.p10k.zsh ]] || source ~/.config/home-manager/.p10k.zsh
-    #   '';
+      #   initExtra = ''
+      #     ;
+      #             [[ ! -f ~/.config/home-manager/.p10k.zsh ]] || source ~/.config/home-manager/.p10k.zsh
+      #   '';
     };
   };
 }
