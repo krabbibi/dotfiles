@@ -5,6 +5,8 @@
 		./lualine.nix
         ./lsp.nix
         ./conform.nix
+        ./cmp.nix
+        ./mini.nix
         ./bufferline.nix
         ./telescope.nix
         ./auto-cmds.nix
