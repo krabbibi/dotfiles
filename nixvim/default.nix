@@ -16,7 +16,7 @@
 		];
 	programs.nixvim = {
 		colorschemes = {
-			cattpuccin = {
+			catppuccin = {
         enable = true;
         settings = {
           flavour = "mocha"; 
