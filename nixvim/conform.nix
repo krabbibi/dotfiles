@@ -123,6 +123,7 @@
           "shellharden"
           "shfmt"
         ];
+        rust = [ "rustfmt" ];
         json = [ "jq" ];
         "_" = [ "trim_whitespace" ];
       };

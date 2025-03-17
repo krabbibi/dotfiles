@@ -30,6 +30,7 @@
     ripgrep
     imagemagick
     mermaid-cli
+    ollama
     tectonic
     starship
     pgadmin

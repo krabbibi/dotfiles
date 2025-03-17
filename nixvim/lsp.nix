@@ -3,7 +3,7 @@
     plugins = {
       lsp = {
         enable = true;
-
+        inlayHints = true;
         keymaps = {
           silent = true;
           diagnostic = {
@@ -34,32 +34,84 @@
           tailwindcss.enable = true;
           protols.enable = true;
           volar.enable = true;
-          rust_analyzer = {
+          #         volar.init_options.vue.hybridMode = true;
+          ts_ls = {
             enable = true;
-            installRustc = false;
-            installCargo = false;
+            filetypes = [
+              "javascript"
+              "javascriptreact"
+              "typescript"
+              "typescriptreact"
+              "vue"
+            ];
+            extraOptions = {
+              settings = {
+                javascript = {
+                  inlayHints = {
+                    includeInlayEnumMemberValueHints = true;
+                    includeInlayFunctionLikeReturnTypeHints = true;
+                    includeInlayFunctionParameterTypeHints = true;
+                    includeInlayParameterNameHints = "all";
+                    includeInlayParameterNameHintsWhenArgumentMatchesName = true;
+                    includeInlayPropertyDeclarationTypeHints = true;
+                    includeInlayVariableTypeHints = true;
+                  };
+                };
+                typescript = {
+                  inlayHints = {
+                    includeInlayEnumMemberValueHints = true;
+                    includeInlayFunctionLikeReturnTypeHints = true;
+                    includeInlayFunctionParameterTypeHints = true;
+                    includeInlayParameterNameHints = "all";
+                    includeInlayParameterNameHintsWhenArgumentMatchesName = true;
+                    includeInlayPropertyDeclarationTypeHints = true;
+                    includeInlayVariableTypeHints = true;
+                  };
+                };
+              };
+            };
           };
         };
       };
-      none-ls = {
+      none-ls.enable = true;
+      bacon.enable = true;
+      rustaceanvim = {
         enable = true;
-        # sources.formatting = {
-        #   alejandra.enable = true;
-        #   hclfmt.enable = true;
-        #   just.enable = true;
-        #   opentofu_fmt.enable = true;
-        #   prettier.enable = true;
-        #   rubocop.enable = true;
-        #   sqlformat.enable = true;
-        #   stylua.enable = true;
-        #   yamlfmt.enable = true;
-        # };
-        # sources.diagnostics = {
-        #   trivy.enable = true;
-        #   yamllint.enable = true;
-        # };
+        settings = {
+          tools.enable_clippy = true;
+          server = {
+            default_settings = {
+              inlayHints = {
+                lifetimeElisionHints = {
+                  enable = "always";
+                };
+              };
+              rust-analyzer = {
+                cargo = {
+                  allFeatures = true;
+                  loadOutDirsFromCheck = true;
+                  buildScripts.enable = true;
+                };
+                check = {
+                  command = "clippy";
+                };
+                checkOnSave = true;
+                #               diagnostics = true;
+                files = {
+                  excludeDirs = [
+                    "target"
+                    ".git"
+                    "node_modules"
+                    ".cargo"
+                    ".github"
+                    ".direnv"
+                  ];
+                };
+              };
+            };
+          };
+        };
       };
-
       trouble = {
         enable = true;
         settings = {
@@ -68,6 +120,9 @@
               win = {
                 position = "right";
               };
+            };
+            diagnostics = {
+              auto_open = true;
             };
           };
         };

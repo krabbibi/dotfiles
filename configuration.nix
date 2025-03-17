@@ -11,9 +11,15 @@
   ];
 
   # Bootloader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "nodev";
-  boot.loader.grub.useOSProber = true;
+  boot.loader = {
+    efi.canTouchEfiVariables = true;
+    grub = {
+      enable = true;
+      devices = [ "nodev" ];
+      efiSupport = true;
+      useOSProber = true;
+    };
+  };
 
   networking.hostName = "nixos"; # Define your hostname.
   networking.networkmanager.enable = true;
@@ -45,6 +51,10 @@
       };
     };
     openssh.enable = true;
+    ollama = {
+      enable = true;
+      acceleration = "rocm";
+    };
     pipewire = {
       enable = true;
       alsa.enable = true;
