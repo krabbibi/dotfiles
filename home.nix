@@ -67,7 +67,6 @@
     # ".config/waybar".source = ./dotfiles/waybar;
     # ".config/waybar/style.css".source = ./dotfiles/waybar/style.css;
     # ".config/waybar/pywal.css".source = ./dotfiles/waybar/pywal.css;
-    #    ".config/BraveSoftware".source = home/BraveSoftware;
   };
   home.shell.enableZshIntegration = true;
   home.sessionVariables = {

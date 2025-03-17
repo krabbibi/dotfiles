@@ -1,0 +1,11 @@
+keys:
+  - &users:
+    - &ta age1x5tgcmd29wseceu33ysm9l785fcuezkv8877kvp7daw4lgmene3qfu8mnp
+  - &hosts:
+    - &guppy age10pce2yf982aed76574ud79teafxptd7zgry8x330hmmmr408ravs3tzxre
+creation_rules:
+  - path_regex: secrets.yaml$
+    keygroups:
+    - age:
+        - *ta
+        - *guppy
