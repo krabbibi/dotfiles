@@ -11,6 +11,7 @@
     homeDirectory = "/Users/krabbe";
     packages = with pkgs; [
       mkalias
+      python3
     ];
   };
 }

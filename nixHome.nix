@@ -9,6 +9,9 @@
   home = {
     username = "krabbe";
     homeDirectory = "/home/krabbe";
+    packages = with pkgs; [
+      thefuck
+    ];
     file = {
 
       ".config/waybar" = {
@@ -20,7 +23,5 @@
         recursive = true;
       };
     };
-    packages = with pkgs; [
-    ];
   };
 }

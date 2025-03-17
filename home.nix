@@ -35,7 +35,6 @@
     starship
     pgadmin
     fzf
-    thefuck
     bat
     eza
     delta
