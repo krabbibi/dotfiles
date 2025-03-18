@@ -16,8 +16,9 @@
   ];
   programs.nixvim = {
     colorschemes = {
+      gruvbox.enable = true;
       catppuccin = {
-        enable = true;
+        enable = false;
         settings = {
           flavour = "mocha";
           default_integrations = true;

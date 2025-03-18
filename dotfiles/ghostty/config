@@ -1,10 +1,11 @@
 # Font
-font-family = ComicShannsMono Nerd Font
+font-family = Iosevka Nerd Font
 font-size = 16
 
 # Theme
-theme = light:catppuccin-mocha,dark:catppuccin-mocha
-
+theme = GruvboxDark
+custom-shader = ./galaxy.glsl
+custom-shader-animation = true
 # Cursor
 cursor-invert-fg-bg
 
@@ -12,8 +13,8 @@ cursor-invert-fg-bg
 mouse-hide-while-typing
 
 # Window
-window-padding-x = 7
-window-padding-y = 7
+window-padding-x = 5
+window-padding-y = 5
 window-padding-balance = true
 window-decoration = false
 
