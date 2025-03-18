@@ -5,7 +5,7 @@ font-size = 16
 # Theme
 theme = GruvboxDark
 custom-shader = ./galaxy.glsl
-custom-shader-animation = true
+# custom-shader-animation = true
 # Cursor
 cursor-invert-fg-bg
 

@@ -1,6 +1,7 @@
 {
   imports = [
     ./auto-cmds.nix
+    ./avante.nix
     ./bufferline.nix
     ./cmp.nix
     ./conform.nix
