@@ -16,7 +16,7 @@
     file = {
 
       ".config/waybar" = {
-        source = dotfiles/ghostty;
+        source = dotfiles/waybar;
         recursive = true;
       };
       ".config/hypr" = {

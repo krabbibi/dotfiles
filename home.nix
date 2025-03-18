@@ -52,16 +52,8 @@
       source = dotfiles/neofetch;
       recursive = true;
     };
-    ".config/waybar" = {
-      source = dotfiles/ghostty;
-      recursive = true;
-    };
     ".config/starship.toml" = {
       source = dotfiles/starship.toml;
-    };
-    ".config/hypr" = {
-      source = dotfiles/hypr;
-      recursive = true;
     };
     # ".config/waybar".source = ./dotfiles/waybar;
     # ".config/waybar/style.css".source = ./dotfiles/waybar/style.css;

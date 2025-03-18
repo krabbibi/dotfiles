@@ -164,6 +164,7 @@
       hyprpaper
       waybar
       pyprland
+      pywal
       kanata
     ];
     variables.EDITOR = "nvim";
