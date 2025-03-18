@@ -1,6 +1,6 @@
 # Font
 font-family = ComicShannsMono Nerd Font
-font-size = 15
+font-size = 16
 
 # Theme
 theme = light:catppuccin-mocha,dark:catppuccin-mocha

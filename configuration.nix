@@ -41,13 +41,43 @@
 
   # Configure keymap in X11
   services = {
+    kanata = {
+      enable = true;
+      keyboards = {
+        "logi" = {
+          config = ''
+            (defsrc
+              grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+              tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+              caps a    s    d    f    g    h    j    k    l    ;    '    ret
+              lsft z    x    c    v    b    n    m    ,    .    /    rsft
+              lctl lmet lalt           spc            ralt rmet rctl
+            )
+
+            (deflayer colemak
+              grv   1    2    3    4    5    6    7    8    9    0    -    =    bspc
+              tab   q    w    e    r    t    y    u    i    o    p    [    ]    \
+              @hypr a    s    d    f    g    h    j    k    l    ;    '    ret
+              lsft  z    x    c    v    b    n    m    ,    .    /    rsft
+              lctl  lmet lalt           spc            ralt rmet rctl
+            )
+            (defalias
+              hypr (multi lsft lctl lalt)
+            )
+
+          '';
+          extraDefCfg = ''
+            process-unmapped-keys yes
+          '';
+        };
+      };
+    };
     xserver.xkb = {
       layout = "us";
       variant = "";
       extraLayouts.ushypr = {
         description = "US layout with Hyper Key";
         languages = [ "eng" ];
-        symbolsFile = keyboard/symbols/ushypr;
       };
     };
     openssh.enable = true;
@@ -112,6 +142,7 @@
     extraGroups = [
       "networkmanager"
       "wheel"
+      "uinput"
     ];
   };
 
@@ -133,6 +164,7 @@
       hyprpaper
       waybar
       pyprland
+      kanata
     ];
     variables.EDITOR = "nvim";
   };

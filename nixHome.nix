@@ -11,6 +11,7 @@
     homeDirectory = "/home/krabbe";
     packages = with pkgs; [
       thefuck
+      wofi
     ];
     file = {
 
@@ -20,6 +21,10 @@
       };
       ".config/hypr" = {
         source = dotfiles/hypr;
+        recursive = true;
+      };
+      ".config/wofi" = {
+        source = dotfiles/wofi;
         recursive = true;
       };
     };
