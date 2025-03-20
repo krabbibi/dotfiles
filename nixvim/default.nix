@@ -10,6 +10,7 @@
     ./lualine.nix
     ./mini.nix
     ./neo-tree.nix
+    ./noice.nix
     ./options.nix
     ./snacks.nix
     ./telescope.nix

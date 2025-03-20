@@ -45,13 +45,24 @@
               "vue"
             ];
             extraOptions = {
+              plugins = {
+                "@vue/typescript-plugin" = {
+                  name = "@vue/typescript-plugin";
+                  location = "/usr/local/lib/node_modules/@vue/typescript-plugin";
+                  languages = [
+                    "javascript"
+                    "typescript"
+                    "vue"
+                  ];
+                };
+              };
               settings = {
                 javascript = {
                   inlayHints = {
                     includeInlayEnumMemberValueHints = true;
                     includeInlayFunctionLikeReturnTypeHints = true;
                     includeInlayFunctionParameterTypeHints = true;
-                    includeInlayParameterNameHints = "all";
+                    #  includeInlayParameterNameHints = "all";
                     includeInlayParameterNameHintsWhenArgumentMatchesName = true;
                     includeInlayPropertyDeclarationTypeHints = true;
                     includeInlayVariableTypeHints = true;
@@ -62,7 +73,7 @@
                     includeInlayEnumMemberValueHints = true;
                     includeInlayFunctionLikeReturnTypeHints = true;
                     includeInlayFunctionParameterTypeHints = true;
-                    includeInlayParameterNameHints = "all";
+                    #  includeInlayParameterNameHints = "all";
                     includeInlayParameterNameHintsWhenArgumentMatchesName = true;
                     includeInlayPropertyDeclarationTypeHints = true;
                     includeInlayVariableTypeHints = true;
@@ -73,7 +84,7 @@
           };
         };
       };
-      none-ls.enable = true;
+      none-ls.enable = false;
       bacon.enable = true;
       rustaceanvim = {
         enable = true;
