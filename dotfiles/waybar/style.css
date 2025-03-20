@@ -4,7 +4,7 @@
   min-height: 0;
   font-family: "iosevka nerd font";
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   padding: 0;
 }
 
@@ -43,7 +43,7 @@ tooltip {
   color: #c7ab7a;
 }
 
-#workspaces button.focused {
+#workspaces button.active {
   color: #ddc7a1;
 }
 

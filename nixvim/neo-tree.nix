@@ -3,7 +3,7 @@
   programs.nixvim.keymaps = [
     {
       mode = "n";
-      key = "<leader>E";
+      key = "<leader>e";
       action = "<cmd>Neotree action=focus reveal toggle<CR>";
       options = {
         desc = "Explorer toggle";
@@ -38,7 +38,7 @@
     };
 
     window = {
-      width = 40;
+      width = 25;
       autoExpandWidth = false;
     };
   };

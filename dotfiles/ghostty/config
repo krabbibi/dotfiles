@@ -4,7 +4,7 @@ font-size = 16
 
 # Theme
 theme = GruvboxDark
-custom-shader = ./galaxy.glsl
+# custom-shader = ./galaxy.glsl
 # custom-shader-animation = true
 # Cursor
 cursor-invert-fg-bg
@@ -22,3 +22,10 @@ window-decoration = false
 keybind = ctrl+comma=increase_font_size:1
 keybind = ctrl+minus=decrease_font_size:1
 keybind = ctrl+zero=reset_font_size
+keybind = ctrl+alt+shift+d=new_split:right
+keybind = ctrl+alt+shift+h=goto_split:left
+keybind = ctrl+alt+shift+j=goto_split:down
+keybind = ctrl+alt+shift+k=goto_split:up
+keybind = ctrl+alt+shift+l=goto_split:right
+keybind = ctrl+alt+shift+]=next_tab
+keybind = ctrl+alt+shift+[=previous_tab

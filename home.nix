@@ -23,6 +23,7 @@
     git
     rustup
     openssh
+    signal-desktop
     age
     sops
     ghostscript

@@ -489,5 +489,29 @@
         desc = "Previous Tab";
       };
     }
+    {
+      mode = "n";
+      key = "<leader>ll";
+      action = "<cmd>Trouble lsp toggle<CR>";
+      options = {
+        desc = "Open LSP Info";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>lj";
+      action = "<cmd>Trouble diagnostics toggle<CR>";
+      options = {
+        desc = "Open Diagnostics";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>lJ";
+      action = "<cmd>Trouble diagnostics toggle filter.buf=0<CR>";
+      options = {
+        desc = "Open folder";
+      };
+    }
   ];
 }
