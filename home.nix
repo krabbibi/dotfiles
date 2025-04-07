@@ -20,6 +20,7 @@
     spotify
     obsidian
     brave
+    neomutt
     git
     rustup
     openssh
