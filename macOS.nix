@@ -33,6 +33,7 @@
       "thefuck"
       "postgresql@17"
       "neomutt"
+      "pyenv"
     ];
   };
   fonts.packages =

@@ -13,36 +13,51 @@
   home.stateVersion = "24.11"; # Please read the comment before changing.
 
   home.packages = with pkgs; [
+    # terminal
     bash
     zsh
     oh-my-posh
     neofetch
-    spotify
-    obsidian
-    brave
-    neomutt
-    git
-    rustup
-    openssh
-    signal-desktop
-    age
-    sops
-    ghostscript
+    tldr
+    zoxide
+    fd
     gh
     ripgrep
-    imagemagick
-    mermaid-cli
-    ollama
-    tectonic
-    starship
-    pgadmin
     fzf
     bat
     eza
     delta
-    tldr
-    zoxide
-    fd
+    starship
+
+    # ui apps
+    spotify
+    obsidian
+    brave
+    signal-desktop
+    pgadmin
+    neomutt
+
+    # dev
+    git
+    nodejs
+    rustup
+    ollama
+
+    # misc
+    openssh
+    age
+    gnupg
+    sops
+    ghostscript
+    imagemagick
+    mermaid-cli
+    tectonic
+    isync
+    msmtp
+    pass
+    abook
+    lynx
+    notmuch
   ];
 
   home.file = {
