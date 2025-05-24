@@ -6,7 +6,7 @@
 }:
 
 {
-  imports = [ ./nixvim ];
+  # imports = [ ./nixvim ];
   home.username = "krabbe";
   # home.homeDirectory = lib.mkDefault "/${if pkgs.stdenv.isDarwin then "Users" else "home"}/krabbe";
 
@@ -72,9 +72,9 @@
     ".config/starship.toml" = {
       source = dotfiles/starship.toml;
     };
-    # ".config/waybar".source = ./dotfiles/waybar;
-    # ".config/waybar/style.css".source = ./dotfiles/waybar/style.css;
-    # ".config/waybar/pywal.css".source = ./dotfiles/waybar/pywal.css;
+    ".config/nvim" = {
+      source = dotfiles/nvim;
+    };
   };
   home.shell.enableZshIntegration = true;
   home.sessionVariables = {
@@ -95,14 +95,6 @@
         init.defaultBranch = "main";
       };
     };
-    nixvim = {
-      enable = true;
-      defaultEditor = true;
-      viAlias = true;
-      vimAlias = true;
-
-      luaLoader.enable = true;
-    };
     ssh = {
       enable = true;
       addKeysToAgent = "yes";
@@ -114,61 +106,61 @@
         };
       };
     };
-    zsh = {
-      enable = true;
-      autosuggestion.enable = true;
-      enableCompletion = true;
-      dotDir = ".config/zsh";
-      shellAliases = {
-        v = "nvim";
-        c = "clear";
-        s = "web_search duckduckgo";
-      };
-      oh-my-zsh = {
-        enable = true;
-        extraConfig = builtins.readFile ./extraConfig.zsh;
-        # Additional oh-my-zsh plugins
-        plugins = [
-          "web-search"
-          "copyfile"
-          "copybuffer"
-          "fzf"
-          "thefuck"
-        ];
-      };
-
-      plugins = [
-        # Autocompletions
-        {
-          name = "zsh-autosuggestions";
-          src = pkgs.fetchFromGitHub {
-            owner = "zsh-users";
-            repo = "zsh-autosuggestions";
-            rev = "v0.7.1";
-            hash = "sha256-vpTyYq9ZgfgdDsWzjxVAE7FZH4MALMNZIFyEOBLm5Qo=";
-          };
-        }
-        # Completion scroll
-        {
-          name = "zsh-completions";
-          src = pkgs.fetchFromGitHub {
-            owner = "zsh-users";
-            repo = "zsh-completions";
-            rev = "0.35.0";
-            hash = "sha256-GFHlZjIHUWwyeVoCpszgn4AmLPSSE8UVNfRmisnhkpg=";
-          };
-        }
-        # Highlight commands in terminal
-        {
-          name = "zsh-syntax-highlighting";
-          src = pkgs.fetchFromGitHub {
-            owner = "zsh-users";
-            repo = "zsh-syntax-highlighting";
-            rev = "0.8.0";
-            hash = "sha256-iJdWopZwHpSyYl5/FQXEW7gl/SrKaYDEtTH9cGP7iPo=";
-          };
-        }
-      ];
-    };
+    #   zsh = {
+    #     enable = true;
+    #     autosuggestion.enable = true;
+    #     enableCompletion = true;
+    #     dotDir = ".config/zsh";
+    #     shellAliases = {
+    #       v = "nvim";
+    #       c = "clear";
+    #       s = "web_search duckduckgo";
+    #     };
+    #     oh-my-zsh = {
+    #       enable = true;
+    #       extraConfig = builtins.readFile ./extraConfig.zsh;
+    #       # Additional oh-my-zsh plugins
+    #       plugins = [
+    #         "web-search"
+    #         "copyfile"
+    #         "copybuffer"
+    #         "fzf"
+    #         "thefuck"
+    #       ];
+    #     };
+    #
+    #     plugins = [
+    #       # Autocompletions
+    #       {
+    #         name = "zsh-autosuggestions";
+    #         src = pkgs.fetchFromGitHub {
+    #           owner = "zsh-users";
+    #           repo = "zsh-autosuggestions";
+    #           rev = "v0.7.1";
+    #           hash = "sha256-vpTyYq9ZgfgdDsWzjxVAE7FZH4MALMNZIFyEOBLm5Qo=";
+    #         };
+    #       }
+    #       # Completion scroll
+    #       {
+    #         name = "zsh-completions";
+    #         src = pkgs.fetchFromGitHub {
+    #           owner = "zsh-users";
+    #           repo = "zsh-completions";
+    #           rev = "0.35.0";
+    #           hash = "sha256-GFHlZjIHUWwyeVoCpszgn4AmLPSSE8UVNfRmisnhkpg=";
+    #         };
+    #       }
+    #       # Highlight commands in terminal
+    #       {
+    #         name = "zsh-syntax-highlighting";
+    #         src = pkgs.fetchFromGitHub {
+    #           owner = "zsh-users";
+    #           repo = "zsh-syntax-highlighting";
+    #           rev = "0.8.0";
+    #           hash = "sha256-iJdWopZwHpSyYl5/FQXEW7gl/SrKaYDEtTH9cGP7iPo=";
+    #         };
+    #       }
+    #     ];
+    #   };
   };
 }
