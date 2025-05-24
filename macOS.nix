@@ -185,7 +185,6 @@
       enable = true;
       package = pkgs.postgresql_17;
     };
-    nix-daemon.enable = true;
 
   };
 }

@@ -74,6 +74,7 @@
     };
     ".config/nvim" = {
       source = dotfiles/nvim;
+      recursive = true;
     };
   };
   home.shell.enableZshIntegration = true;
