@@ -32,7 +32,6 @@
       experimental-features = "nix-command flakes";
       warn-dirty = false;
     };
-    channel.enable = false;
   };
 
   homebrew = {
@@ -46,6 +45,7 @@
 
     casks = [
       "ghostty"
+            "signal"
     ];
 
     brews = [
@@ -67,6 +67,7 @@
   security.pam.services.sudo_local.touchIdAuth = true;
 
   system = {
+    primaryUser = "krabbe";
     defaults = {
       NSGlobalDomain = {
         AppleShowAllExtensions = true;

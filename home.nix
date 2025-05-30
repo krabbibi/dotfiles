@@ -14,39 +14,32 @@
 
   home.packages = with pkgs; [
     # terminal
-    bash
-    zsh
+    bat
+    coreutils
+    delta
+    eza
+    fd
     fish
-    neovim
-    oh-my-posh
+    fzf
+    gh
     neofetch
+    ripgrep
     tldr
     zoxide
-    fd
-    gh
-    ripgrep
-    fzf
-    bat
-    eza
-    delta
-    starship
 
     # ui apps
     spotify
     obsidian
     brave
-    signal-desktop
     pgadmin
     neomutt
 
     # dev
-    git
     nodejs
     rustup
     ollama
 
     # misc
-    openssh
     age
     gnupg
     sops
@@ -63,6 +56,10 @@
   ];
 
   home.file = {
+    ".config/fish" = {
+        source = dotfiles/fish;
+        recursive = true;
+    };
     ".config/ghostty" = {
       source = dotfiles/ghostty;
       recursive = true;
@@ -79,7 +76,7 @@
       recursive = true;
     };
     ".zshrc" = {
-      source = dotfiles/zshrc;
+      source = dotfiles/.zshrc;
     };
   };
   home.shell.enableZshIntegration = true;
@@ -90,8 +87,10 @@
 
   programs = {
     bash.enable = true;
+        zsh.enable = true;
     direnv.enable = true;
     home-manager.enable = true;
+        neovim.enable = true;
     git = {
       enable = true;
       userName = "krabbibi";
@@ -112,5 +111,6 @@
         };
       };
     };
+    starship.enable = true;
   };
 }

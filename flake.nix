@@ -10,10 +10,6 @@
     nix-darwin.url = "github:LnL7/nix-darwin/master";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     mac-app-util.url = "github:hraban/mac-app-util";
-    nixvim = {
-      url = "github:nix-community/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs =
@@ -24,7 +20,6 @@
       home-manager,
       nix-darwin,
       mac-app-util,
-      nixvim,
       ...
     }:
     let
@@ -41,9 +36,6 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.sharedModules = [
-                nixvim.homeManagerModules.nixvim
-              ];
               home-manager.users.krabbe = import ./nixHome.nix;
 
               # Optionally, use home-manager.extraSpecialArgs to pass
@@ -60,9 +52,6 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.sharedModules = [
-              nixvim.homeManagerModules.nixvim
-            ];
             home-manager.users.krabbe = import ./macHome.nix;
 
             # Optionally, use home-manager.extraSpecialArgs to pass
