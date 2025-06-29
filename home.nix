@@ -36,6 +36,7 @@
 
     # dev
     nodejs
+        pnpm
     rustup
     ollama
 

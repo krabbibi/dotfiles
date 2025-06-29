@@ -1,1 +1,7 @@
-/nix/store/h11zj71jrws41rv9jwk3b5fb0fi51zps-hm_nvim/lua/config/options.lua
+-- Options are automatically loaded before lazy.nvim startup
+-- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
+-- Add any additional options here
+local opt = vim.opt
+
+opt.shiftwidth = 4
+opt.tabstop = 4

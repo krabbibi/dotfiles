@@ -53,6 +53,7 @@
       "postgresql@17"
       "neomutt"
       "pyenv"
+      "lcdf-typetools"
     ];
 
     masApps = {
@@ -77,10 +78,10 @@
         NSNavPanelExpandedStateForSaveMode2 = true;
         PMPrintingExpandedStateForPrint = true;
         PMPrintingExpandedStateForPrint2 = true;
-        _HIHideMenuBar = true;
+        _HIHideMenuBar = false;
         NSDocumentSaveNewDocumentsToCloud = false;
         ApplePressAndHoldEnabled = false;
-        InitialKeyRepeat = 25;
+        InitialKeyRepeat = 20;
         KeyRepeat = 2;
         "com.apple.mouse.tapBehavior" = 1;
         NSWindowShouldDragOnGesture = true;
@@ -96,7 +97,7 @@
           _FXSortFoldersFirst = true;
           # When performing a search, search the current folder by default
           FXDefaultSearchScope = "SCcf";
-          DisableAllAnimations = true;
+          DisableAllAnimations = false;
           NewWindowTarget = "PfDe";
           NewWindowTargetPath = "file://$\{HOME\}/Desktop/";
           AppleShowAllExtensions = true;

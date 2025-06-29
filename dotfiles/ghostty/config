@@ -1,9 +1,9 @@
 # Font
-font-family = Iosevka Nerd Font
-font-size = 16
+font-family = "ZedMono Nerd Font Mono"
+font-size = 19
 
 # Theme
-theme = GruvboxDark
+theme = catppuccin-mocha
 # custom-shader = ./galaxy.glsl
 # custom-shader-animation = true
 # Cursor
@@ -13,10 +13,12 @@ cursor-invert-fg-bg
 mouse-hide-while-typing
 
 # Window
+background-opacity = 0.72
+background-blur = true
 window-padding-x = 5
 window-padding-y = 5
 window-padding-balance = true
-window-decoration = false
+window-decoration = auto
 
 # Keybindings
 keybind = ctrl+comma=increase_font_size:1
@@ -29,3 +31,4 @@ keybind = ctrl+alt+shift+k=goto_split:up
 keybind = ctrl+alt+shift+l=goto_split:right
 keybind = ctrl+alt+shift+]=next_tab
 keybind = ctrl+alt+shift+[=previous_tab
+keybind = super+shift+space=toggle_quick_terminal
