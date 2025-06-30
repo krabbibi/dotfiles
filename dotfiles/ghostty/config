@@ -1,6 +1,6 @@
 # Font
-font-family = "ZedMono Nerd Font Mono"
-font-size = 19
+font-family = "RecMonoCasual Nerd Font Mono"
+font-size = 18
 
 # Theme
 theme = catppuccin-mocha
