@@ -1,6 +1,9 @@
 # Font
-font-family = "RecMonoCasual Nerd Font Mono"
-font-size = 18
+font-family = ""
+font-family = "IosevkaTerm NFM"
+font-family = "Iosevka NFM"
+font-family = "Iosevka Nerd Font Mono"
+font-size = 19
 
 # Theme
 theme = catppuccin-mocha

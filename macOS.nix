@@ -81,7 +81,7 @@
         _HIHideMenuBar = false;
         NSDocumentSaveNewDocumentsToCloud = false;
         ApplePressAndHoldEnabled = false;
-        InitialKeyRepeat = 20;
+        InitialKeyRepeat = 15;
         KeyRepeat = 2;
         "com.apple.mouse.tapBehavior" = 1;
         NSWindowShouldDragOnGesture = true;

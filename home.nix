@@ -1,6 +1,4 @@
 {
-  lib,
-  config,
   pkgs,
   ...
 }:
@@ -24,6 +22,7 @@
     gh
     neofetch
     ripgrep
+    tmux
     tldr
     zoxide
 
@@ -83,15 +82,15 @@
   home.shell.enableZshIntegration = true;
   home.sessionVariables = {
     EDITOR = "nvim";
-    SHELL = "zsh";
+    SHELL = "fish";
   };
 
   programs = {
     bash.enable = true;
-        zsh.enable = true;
+    zsh.enable = true;
     direnv.enable = true;
     home-manager.enable = true;
-        neovim.enable = true;
+    neovim.enable = true;
     git = {
       enable = true;
       userName = "krabbibi";
