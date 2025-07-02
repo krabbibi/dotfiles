@@ -10,6 +10,7 @@
   environment.systemPackages = with pkgs; [
     aldente
     raycast
+    cmake
   ];
 
   # The platform the configuration will be used on.
