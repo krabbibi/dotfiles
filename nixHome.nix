@@ -10,7 +10,6 @@
     username = "krabbe";
     homeDirectory = "/home/krabbe";
     packages = with pkgs; [
-      thefuck
       wofi
     ];
     file = {
