@@ -124,6 +124,7 @@
         ];
       };
     };
+    hypridle.enable = true;
     greetd = {
       enable = true;
       settings = {
@@ -135,7 +136,10 @@
     };
   };
 
-  security.rtkit.enable = true;
+  security = {
+        rtkit.enable = true;
+        pam.services.hyprlock = {};
+    };
   users.users.krabbe = {
     isNormalUser = true;
     description = "krabbe";
