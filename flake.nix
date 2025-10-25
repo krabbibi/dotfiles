@@ -14,9 +14,7 @@
 
   outputs =
     {
-      self,
       nixpkgs,
-      sops-nix,
       home-manager,
       nix-darwin,
       mac-app-util,
@@ -31,7 +29,6 @@
           system = "x84_64-linux";
           modules = [
             ./configuration.nix
-            sops-nix.nixosModules.sops
             home-manager.nixosModules.home-manager
             {
               home-manager.useGlobalPkgs = true;

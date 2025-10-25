@@ -1,60 +1,72 @@
 {
-  lib,
-  config,
-  pkgs,
+  inputs,
   ...
 }:
 {
-  imports = [ ./home.nix ];
+  imports = [ 
+    ./home.nix
+    ./modules/home-manager/default.nix 
+  ];
   home = {
     username = "krabbe";
-    homeDirectory = "/home/krabbe";
-    packages = with pkgs; [
-      wofi
-    ];
-    file = {
-
-      ".config/waybar" = {
-        source = dotfiles/waybar;
-        recursive = true;
-      };
-      ".config/hypr" = {
-        source = dotfiles/hypr;
-        recursive = true;
-      };
-      ".config/wofi" = {
-        source = dotfiles/wofi;
-        recursive = true;
-      };
-    };
+    #homeDirectory = "/home/krabbe";
+    # packages = with pkgs; [
+    #   wofi
+    #   unzip
+    # ];
+    # file = {
+    #
+    #   ".config/waybar" = {
+    #     source = dotfiles/waybar;
+    #     recursive = true;
+    #   };
+    #   ".config/hypr" = {
+    #     source = dotfiles/hypr;
+    #     recursive = true;
+    #   };
+    #   ".config/wofi" = {
+    #     source = dotfiles/wofi;
+    #     recursive = true;
+    #   };
+    # };
   };
-programs = {
-    hyprlock = {
-        enable = true;
-        settings = {
-            background = [
-                {
-                    path = "screenshot";
-                    blur_passes = 1;
-                    blur_size = 8;
-                }
-            ];
-
-            input-field = [
-                {
-                    size = "200, 50";
-                    position = "0, -80";
-                    monitor = "";
-                    dots_center = true;
-                    fade_on_empty = false;
-                    font_color = "rgb(202, 211, 245)";
-                    inner_color = "rgb(91, 96, 120)";
-                    outer_color = "rgb(24, 25, 38)";
-                    outline_thickness = 5;
-                    shadow_passes = 2;
-                }
-            ];
-        };
-    };
-};
+  programs = {
+      # hyprlock = {
+      #     enable = true;
+      # };
+      # walker = {
+      #     enable = true;
+      #     runAsService = true;
+      #     config = {
+      #       theme = "catppuccin";
+      #       force_keyboard_focus = true;                                                 # forces keyboard forcus to stay 
+      #       close_when_open = true;                                                      # close walker when invoking while already opened
+      #       selection_wrap = true;                                                       # wrap list if at bottom or top
+      #       click_to_close = true;                                                       # closes walker if clicking outside of the main content area
+      #       global_argument_delimiter = "#";                                             # query: firefox#https://benz.dev => part after delimiter will be ignored when querying. this should be the same as in the elephant config
+      #       exact_search_prefix = "'";                                                   # disable fuzzy searching
+      #       disable_mouse = false;
+      #       placeholders."default" = { input = "Search"; list = "Example"; };
+      #       providers = {
+      #         default = [
+      #           "desktopapplications"
+      #           "menus"
+      #           "websearch"
+      #         ]; # providers to be queried by default
+      #         empty = ["desktopapplications"]; # providers to be queried when query is empty
+      #         max_results = 50; # global max results
+      #         prefixes = [
+      #           {prefix = "/"; provider = "providerlist";}
+      #           {prefix = "."; provider = "files";}
+      #           {prefix = ":"; provider = "symbols";}
+      #           {prefix = "="; provider = "calc";}
+      #           {prefix = "@"; provider = "websearch";}
+      #           {prefix = "$"; provider = "clipboard";}
+      #         ];
+      #       };
+      #       keybinds.quick_activate = ["F1" "F2" "F3"];
+      #     };
+      #
+      #   };
+  };
 }

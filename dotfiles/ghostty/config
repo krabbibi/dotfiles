@@ -6,7 +6,7 @@ font-family = "Iosevka Nerd Font Mono"
 font-size = 19
 
 # Theme
-theme = catppuccin-mocha
+theme = Catppuccin Mocha
 # custom-shader = ./galaxy.glsl
 # custom-shader-animation = true
 # Cursor

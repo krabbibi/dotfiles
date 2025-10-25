@@ -1,10 +1,10 @@
 {
   pkgs,
+  inputs,
   ...
 }:
 
 {
-  # imports = [ ./nixvim ];
   home.username = "krabbe";
   # home.homeDirectory = lib.mkDefault "/${if pkgs.stdenv.isDarwin then "Users" else "home"}/krabbe";
 
@@ -27,7 +27,7 @@
     zoxide
 
     # ui apps
-    spotify
+        #spotify
     obsidian
     brave
     pgadmin
@@ -75,41 +75,40 @@
       source = dotfiles/nvim;
       recursive = true;
     };
-    ".zshrc" = {
-      source = dotfiles/.zshrc;
-    };
+    # ".zshrc" = {
+    #   source = dotfiles/.zshrc;
+    # };
   };
   home.shell.enableZshIntegration = true;
   home.sessionVariables = {
     EDITOR = "nvim";
-    SHELL = "fish";
+    SHELL = "zsh";
   };
 
   programs = {
     bash.enable = true;
-    zsh.enable = true;
+        #    zsh.enable = true;
     direnv.enable = true;
     home-manager.enable = true;
     neovim.enable = true;
     git = {
       enable = true;
-      userName = "krabbibi";
-      userEmail = "sebastian.alexander.mock@gmail.com";
-
-      extraConfig = {
+      settings = {
+        user.name = "krabbibi";
+        user.email = "sebastian.alexander.mock@gmail.com";
         init.defaultBranch = "main";
       };
     };
     ssh = {
       enable = true;
       addKeysToAgent = "yes";
-      matchBlocks = {
-        "github.com" = {
-          hostname = "github.com";
-          user = "git";
-          identityFile = "~/.ssh/main";
-        };
-      };
+      # matchBlocks = {
+      #   "github.com" = {
+      #     hostname = "github.com";
+      #     user = "git";
+      #     identityFile = "~/.ssh/main";
+      #   };
+      # };
     };
     starship.enable = true;
   };
