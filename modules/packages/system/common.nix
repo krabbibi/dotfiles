@@ -1,0 +1,25 @@
+{
+  pkgs,
+  ...
+}:
+{
+  environment.systemPackages = with pkgs; [
+    clang
+    curl
+    eza
+    fd
+    ffmpeg
+    fzf
+    gcc
+    gh
+    libnotify
+    lldb
+    nautilus
+    nixfmt
+    nodejs
+    pnpm
+    unzip
+    wget
+    zoxide
+  ];
+}

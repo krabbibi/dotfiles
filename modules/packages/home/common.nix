@@ -1,0 +1,26 @@
+{
+  pkgs,
+  ...
+}:
+{
+  home.packages = with pkgs; [
+    brave
+    btop
+    docker-compose
+    fastfetch
+    git
+    github-desktop
+    lazydocker
+    lazygit
+    libnotify
+    lldb
+    nautilus
+    neofetch
+    nixfmt
+    obsidian
+    signal-desktop
+    spotify
+    statix
+    tmux
+  ];
+}

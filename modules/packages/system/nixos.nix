@@ -1,0 +1,27 @@
+{
+  pkgs,
+  ...
+}:
+{
+  environment.systemPackages = with pkgs; [
+    alejandra
+    blueberry
+    clipse
+    chromium
+    brightnessctl
+    gnome-themes-extra
+    gnumake
+    hyprshot
+    hyprpicker
+    hyprsunset
+    jq
+    pamixer
+    pavucontrol
+    playerctl
+    powertop
+    ripgrep
+    rustup
+    vim
+    vlc
+  ];
+}
