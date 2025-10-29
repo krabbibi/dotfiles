@@ -10,11 +10,11 @@ let
   # foregroundRgb = "rgb(${convert ", " palette.base05})";
 in
 {
-  home.file = {
-    ".config/waybar/" = {
-      source = ../../config/waybar;
-      recursive = true;
-    };
+  # home.file = {
+  #   ".config/waybar/" = {
+  #     source = ../../config/waybar;
+  #     recursive = true;
+  #   };
     # ".config/waybar/theme.css" = {
     #   text = ''
     #     @define-color background ${backgroundRgb};
@@ -27,7 +27,7 @@ in
     #     }
     #   '';
     # };
-  };
+  # };
 
   programs.waybar = {
     enable = true;

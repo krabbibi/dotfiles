@@ -4,16 +4,16 @@
   lib,
   ...
 }:
-let
-  palette = config.colorScheme.palette;
+# let
+#   palette = config.colorScheme.palette;
 #  convert = inputs.nix-colors.lib.conversions.hexToRGBString;
-  selected_wallpaper_path = (import ../../lib/selected-wallpaper.nix config).wallpaper_path;
+  # selected_wallpaper_path = (import ../../lib/selected-wallpaper.nix config).wallpaper_path;
 
   # backgroundRgb = "rgba(${convert ", " palette.base00}, 0.8)";
   # surfaceRgb = "rgb(${convert ", " palette.base02})";
   # foregroundRgb = "rgb(${convert ", " palette.base05})";
   # foregroundMutedRgb = "rgb(${convert ", " palette.base04})";
-in
+#in
 {
   programs.hyprlock = {
     enable = true;
@@ -27,7 +27,7 @@ in
       };
       background = {
         monitor = "";
-        path = selected_wallpaper_path;
+        # path = selected_wallpaper_path;
         # blur_passes = 3;
         # brightness = 0.5;
       };
