@@ -25,7 +25,7 @@
     };
   };
 
-  colorScheme = nix-colors.colorSchemes.catppuccin-mocha;
+  colorScheme = nix-colors.colorSchemes.spaceduck;
   programs = {
     bash = {
       enable = true;

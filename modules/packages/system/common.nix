@@ -14,6 +14,7 @@
     gh
     libnotify
     lldb
+    lua
     nautilus
     nixfmt
     nodejs

@@ -46,11 +46,15 @@
       "signal"
       "raycast"
       "aldente"
+      "sf-symbols"
+      "font-sf-mono"
+      "font-sf-pro"
     ];
 
     brews = [
       "thefuck"
       "pyenv"
+      "lua"
     ];
 
     masApps = {

@@ -15,6 +15,9 @@
     hyprpicker
     hyprsunset
     jq
+    libnotify
+    lldb
+    nautilus
     pamixer
     pavucontrol
     playerctl
@@ -23,5 +26,6 @@
     rustup
     vim
     vlc
+    signal-desktop
   ];
 }

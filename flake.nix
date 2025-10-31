@@ -34,6 +34,7 @@
               useUserPackages = true;
               users.krabbe = import ./nixos/home.nix;
               extraSpecialArgs = { inherit nix-colors; };
+              backupFileExtension = "bac";
             };
           }
         ];
@@ -49,6 +50,7 @@
               useUserPackages = true;
               users.krabbe = import ./darwin/home.nix;
               extraSpecialArgs = { inherit nix-colors; };
+              backupFileExtension = "bac";
             };
 
           }

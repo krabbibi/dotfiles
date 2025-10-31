@@ -10,7 +10,7 @@ for sid in $ALL_WORKSPACES; do
 		background.color=0x44ffffff \
 		background.corner_radius=5 \
 		background.height=20 \
-		background.drawing=off \
+		background.drawing=on \
 		icon.padding_left=0 \
 		icon.padding_right=0 \
 		label.padding_left=3 \

@@ -1,15 +1,14 @@
 {
-  lib,
-  config,
-  pkgs,
+  nix-colors,
   ...
 }:
 {
   imports = [
-    ../modules/home-manager/aerospace.nix
-    ../modules/home-manager/common.nix
-    ../modules/home-manager/btop.nix
-    ../modules/home-manager/zsh.nix
+    nix-colors.homeManagerModules.default
+    ../modules/home/aerospace.nix
+    ../modules/home/common.nix
+    ../modules/home/btop.nix
+    ../modules/home/zsh.nix
     ../modules/packages/home/common.nix
     ../modules/packages/home/darwin.nix
   ];
@@ -23,6 +22,10 @@
       };
       ".config/ghostty" = {
         source = ../dotfiles/ghostty;
+        recursive = true;
+      };
+      ".config/borders" = {
+        source = ../dotfiles/borders;
         recursive = true;
       };
       ".config/raycast" = {

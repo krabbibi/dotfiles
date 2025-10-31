@@ -9,16 +9,13 @@
     docker-compose
     fastfetch
     git
-    github-desktop
     lazydocker
     lazygit
-    libnotify
-    lldb
-    nautilus
+    lua
+    luarocks
     neofetch
     nixfmt
     obsidian
-    signal-desktop
     spotify
     statix
     tmux
